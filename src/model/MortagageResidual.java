@@ -1,6 +1,7 @@
 package model;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class MortagageResidual {
 
@@ -13,7 +14,7 @@ public class MortagageResidual {
     }
 
     public BigDecimal getAmount() {
-        return amount;
+        return amount.setScale(2, RoundingMode.HALF_UP);
     }
 
     public BigDecimal getDuration() {
