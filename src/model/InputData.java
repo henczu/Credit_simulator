@@ -6,6 +6,7 @@ import java.time.LocalDate;
 import java.util.Map;
 
 public class InputData {
+
     private static final BigDecimal PERCENT = BigDecimal.valueOf(100);
 
     private LocalDate repaymentStartDate = LocalDate.of(2020,1,6);
