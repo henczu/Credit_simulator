@@ -31,7 +31,7 @@ public class InputData {
     private String overpaymentReduceWay = Overpayment.REDUCE_PERIOD;
 
     private BigDecimal overpaymentProvisionPercent = BigDecimal.valueOf(3);
-    private BigDecimal overpaymentProvisionMonths = BigDecimal.valueOf(3);
+    private BigDecimal overpaymentProvisionMonths = BigDecimal.valueOf(36);
     public InputData withOverpaymentSchema(Map<Integer, BigDecimal> overpaymentSchema){
         this.overpaymentSchema = overpaymentSchema;
         return this;

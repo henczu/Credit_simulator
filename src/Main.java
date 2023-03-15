@@ -13,7 +13,10 @@ public class Main {
         PrintingService printingService = new PrintingServiceImpl();
         RateCalculationService rateCalculationService = new RateCalculationServiceImppl(
                 new TimePointServiceImpl(),
-                new AmountCalculationServiceImpl(),
+                new AmountCalculationServiceImpl(
+                        new ConstantAmountsCalculationServiceImpl(),
+                        new DecreasingAmountCalculationServiceImpl()
+                ),
                 new OverpaymentCalculationServiceImpl(),
                 new ResidualCalculationServiceImpl(),
                 new ReferenceCalculationServiceImpl()
